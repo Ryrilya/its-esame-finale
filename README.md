@@ -3,7 +3,7 @@
 In questo progetto vi sono i file per la prima prova d'esame, più nello specifico per la parte di Design (Task 5).
 
 ## Come avviare il progetto
-1. Per prima cosa estrarre il contenuto del file `.zip`
+1. Scaricare un file zip della repository oppure fare un clone della stessa
 2. Per avviare il progetto basterà aprire con un qualsiasi browser il file `index.html`
 
 ## Descrizione
