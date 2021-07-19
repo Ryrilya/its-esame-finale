@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Touring Club Italiano | Roma</title>
+  <link rel="stylesheet" type="text/css" href="lib/bulma/css/bulma.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style/attrazioni.css">
+</head>
+<body>
+  <nav class="navbar" role="navigation" aria-label="navigazione principale">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://bulma.io">
+        <img src="assets/brand-logo.png" alt="logo aziendale">
+        <h3 class="brand-name">Touring Club Italiano</h3>
+      </a>
+  
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="main-navbar">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+  
+    <div id="main-navbar" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" href="pages/locations.html">
+          Località
+        </a>
+  
+        <a class="navbar-item" href="pages/pass.html">
+          Pass
+        </a>
+  
+        <a class="navbar-item" href="pages/about-us.html">
+          Chi siamo
+        </a>
+      </div>
+  
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="buttons">
+            <a class="button is-secondary">
+              <strong>Registrati</strong>
+            </a>
+            <a class="button is-primary">
+              Accedi
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="headings">
+      <h1 class="title">ROMA</h1>
+      <hr />
+      <div class="subtitle">
+        Corri a scoprire cosa cela la capitale d’Italia
+      </div>
+    </div>
+  </section>
+
+  <main class="main-content" id="main-content">
+    <nav class="breadcrumb" aria-label="breadcrumbs">
+      <ul>
+        <li><a href="./località.html">Località</a></li>
+        <li class="is-active" aria-current="page"><a href="#">Roma</a></li>
+      </ul>
+    </nav>
+
+    <h2 class="page-title">Attrazioni</h2>
+    <div class="filters">
+      <div class="select">
+        <select>
+          <option selected disabled>Ordina per</option>
+          <option value="alphabetically">Ordine alfabetico</option>
+          <option value="popolarity">Popolarità</option>
+          <option value="proximity">Prossimità</option>
+        </select>
+      </div>
+
+      <div class="select">
+        <select>
+          <option selected disabled>Tipo interesse</option>
+          <option value="historical">Storico</option>
+          <option value="landscaped">Paesagistico</option>
+          <option value="artistic">Artistico</option>
+        </select>
+      </div>
+
+      <hr />
+
+      <div class="filters-tag">
+        <h3 class="title">Filtra per:</h3>
+        <div class="tags are-medium">
+          <span class="tag is-primary">Popolarità</span>
+          <span class="tag is-primary">Storico</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Immagine solamente per placeholder. Al suo posto ci sarebbe probabilmente una mappa con API di Google personalizzabile -->
+    <div class="interactive-map"></div>
+
+    <section class="results">
+      <h3 class="title">Risultati (5)</h3>
+      <div class="attractions">
+        <!-- Ogni card dell'attrazione sarebbe un link che porterebbe alla sua pagina di dettaglio -->
+
+        <!-- Colosseo -->
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="assets/attractions/colosseo.jpg" alt="attrazione colosseo">
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="content">
+              <h4 class="card-title">Colosseo</h4>
+              <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus nec iaculis mauris.</p>
+            </div>
+            <img src="assets/stars.png" alt="placeholder recensioni">
+          </div>
+        </div>
+
+        <!-- Fontana di Trevi -->
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="assets/attractions/fontana-di-trevi.jpg" alt="Fontana di trevi">
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="content">
+              <h4 class="card-title">Fontana di Trevi</h4>
+              <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus nec iaculis mauris.</p>
+            </div>
+            <img src="assets/stars.png" alt="placeholder recensioni">
+          </div>
+        </div>
+
+        <!-- Piazza S. Pietro -->
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="assets/attractions/san-pietro.jpg" alt="Piazza san pietro">
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="content">
+              <h4 class="card-title">Piazza S. Pietro</h4>
+              <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus nec iaculis mauris.</p>
+            </div>
+            <img src="assets/stars.png" alt="placeholder recensioni">
+          </div>
+        </div>
+
+        <!-- Fori romani -->
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="assets/attractions/fori-romani.jpg" alt="Fori romani">
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="content">
+              <h4 class="card-title">Fori Romani</h4>
+              <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus nec iaculis mauris.</p>
+            </div>
+            <img src="assets/stars.png" alt="placeholder recensioni">
+          </div>
+        </div>
+
+        <!-- Pantheon -->
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="assets/attractions/pantheon.jpg" alt="Pantheon">
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="content">
+              <h4 class="card-title">Pantheon</h4>
+              <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus nec iaculis mauris.</p>
+            </div>
+            <img src="assets/stars.png" alt="placeholder recensioni">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-left">
+      <div class="brand">
+        <img src="assets/brand-logo.png" alt="logo aziendale" class="brand-logo">
+        <h3 class="brand-name">Touring Club Italiano</h3>
+      </div>
+  
+      <div class="links">
+        <div class="link" id="località">
+          <a href="pages/locations.html">Località</a>
+          <a href="#">Roma</a>
+          <a href="#">Venezia</a>
+          <a href="#">Firenze</a>
+          <a href="#">Genova</a>
+          <a href="#">Torino</a>
+          <a href="#">Altre</a>
+        </div>
+
+        <div class="link" id="pass">
+          <a href="pages/pass.html">Pass</a>
+          <a href="pages/pass.html#provincial">Provinciale giornaliero</a>
+          <a href="pages/pass.html#national">Nazionale settimanale</a>
+        </div>
+
+        <div class="link" id="about-us">
+          <a href="pages/about-us.html">Chi Siamo</a>
+          <a href="pages/about-us.html#our-story">La nostra storia</a>
+          <a href="pages/about-us.html#services">Servizi</a>
+          <a href="pages/about-us.html#where-to-find-us">Dove trovarci</a>
+          <a href="pages/about-us.html#contacts">Contatti</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-right">
+      <h3 class="title">Iscriviti alla newsletter</h3>
+      <div class="input-and-btn">
+        <div class="control has-icons-left has-icons-right">
+          <input class="input is-medium" type="email" placeholder="esempio@email.com">
+          <span class="icon is-left">
+            <i class="fas fa-envelope"></i>
+          </span>
+        </div>
+        <button class="button is-primary is-medium">
+          Iscriviti
+          <i class="fa fa-paper-plane"></i>
+        </button>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

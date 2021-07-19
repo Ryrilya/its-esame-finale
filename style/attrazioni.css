@@ -1,0 +1,210 @@
+/* font importing */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Montserrat:wght@300;400;500;600;700&family=Raleway:wght@300;400;600;700&display=swap');
+
+:root {
+  --primary: #00d1b2;
+  --secondary: #1D3557;
+  --accent-dark: #F1FAEE;
+  --accent-light: #457B9D;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navbar {
+  padding: 0 10rem;
+  height: 5rem;
+  background-color: var(--secondary);
+}
+
+.navbar .navbar-item {
+  color: white;
+  transition: all .3s ease;
+}
+
+.navbar-brand .navbar-item {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* Hero section */
+.hero {
+  width: 100vw;
+  height: calc(100vh - 5rem);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 10rem;
+  background-image: url('../assets/colloseum.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero .title {
+  font-family: 'Cinzel', serif;
+  font-weight: bold;
+  font-size: 9rem;
+  color: var(--accent-dark);
+}
+
+.hero hr {
+  height: 2px;
+  background-color: var(--accent-dark);
+}
+
+.hero .subtitle {
+  background-color: white;
+  padding: 1rem 2rem;
+  color: var(--primary);
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Main Content */
+.main-content {
+  padding: 5rem 10rem;
+}
+
+.main-content .breadcrumb {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.main-content .page-title {
+  font-family: 'Raleway', serif;
+  font-weight: bold;
+  font-size: 4rem;
+  color: var(--primary);
+}
+
+.main-content .filters-tag {
+  width: 100%;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.filters-tag .title {
+  font-family: 'Raleway', serif;
+  color: var(--secondary);
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.filters-tag .tags {
+  display: flex;
+}
+
+/* Map */
+.interactive-map {
+  margin-top: 5rem;
+  min-width: 100%;
+  min-height: 500px;
+  background-image: url('../assets/map.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: .5rem;
+}
+
+/* Results */
+.results {
+  margin-top: 5rem;
+  min-width: 100%;
+}
+
+.results .title {
+  font-family: 'Raleway', serif;
+  font-weight: bold;
+  color: var(--secondary);
+}
+
+.results .attractions {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.results .attractions .card {
+  transition: transform .3s ease;
+  cursor: pointer;
+}
+
+.results .attractions .card:hover {
+  transform: scale(1.1);
+}
+
+.attractions .card .card-title {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  color: var(--primary);
+}
+
+/* Footer */
+.footer {
+  min-height: 30vh;
+  padding: 3rem 10rem;
+  background-color: var(--secondary);
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.footer-right .title {
+  color: white;
+}
+
+.footer-right .input-and-btn {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-right .input-and-btn button {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer .footer-left .brand {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer .footer-left .brand .brand-logo {
+  width: 2rem;
+  height: 2rem;
+}
+
+.footer .footer-left .brand .brand-name {
+  color: white;
+  font-family: 'Raleway', serif;
+  font-weight: bold;
+}
+
+.footer .footer-left .links {
+  margin-top: 1rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.links .link {
+  display: flex;
+  flex-direction: column;
+}
+
+.links .link a:first-child {
+  color: #c4c4c4;
+}
+
+.links .link a {
+  color: white;
+}
+
+.links .link a:hover {
+  text-decoration: underline;
+}
